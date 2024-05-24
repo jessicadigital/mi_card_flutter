@@ -36,6 +36,56 @@ class MyApp extends StatelessWidget {
                   letterSpacing:2.5,
                 ),
               ),
+              Container(
+                color:Colors.white,
+                margin:EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                padding: EdgeInsets.all(10.0),
+                child:Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width:10.0,
+                    ),
+                    Text(
+                      '+44 1234 567890',
+                      style:TextStyle(
+                        color: Colors.teal[900],
+                        fontFamily: 'Source Sans',
+                        fontSize:20.0,
+                        fontWeight:FontWeight.bold,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                color:Colors.white,
+                margin:EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                padding: EdgeInsets.all(10.0),
+                child:Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.mail,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width:10.0,
+                    ),
+                    Text(
+                      'jessica@email.com',
+                      style:TextStyle(
+                        color: Colors.teal[900],
+                        fontFamily: 'Source Sans',
+                        fontSize:20.0,
+                        fontWeight:FontWeight.bold,
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ],
           ),
         ),
