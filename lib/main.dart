@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 backgroundImage: AssetImage('images/avatar.jpg'),
@@ -36,20 +37,23 @@ class MyApp extends StatelessWidget {
                   letterSpacing:2.5,
                 ),
               ),
-              Container(
-                color:Colors.white,
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color:Colors.teal[100],
+                ),
+              ),
+              Card(
                 margin:EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
-                child:Row(
-                  children: <Widget>[
-                    Icon(
+                child:Padding(
+                  padding: const EdgeInsets.all(25.0),
+                  child: ListTile(
+                    leading:Icon(
                       Icons.phone,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      width:10.0,
-                    ),
-                    Text(
+                    title:Text(
                       '+44 1234 567890',
                       style:TextStyle(
                         color: Colors.teal[900],
@@ -57,24 +61,20 @@ class MyApp extends StatelessWidget {
                         fontSize:20.0,
                         fontWeight:FontWeight.bold,
                       ),
-                    )
-                  ],
+                    ),
+                  ),
                 ),
               ),
-              Container(
-                color:Colors.white,
+              Card(
                 margin:EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
-                child:Row(
-                  children: <Widget>[
-                    Icon(
+                child:Padding(
+                  padding: const EdgeInsets.all(25.0),
+                  child: ListTile(
+                    leading:Icon(
                       Icons.mail,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      width:10.0,
-                    ),
-                    Text(
+                    title:Text(
                       'jessica@email.com',
                       style:TextStyle(
                         color: Colors.teal[900],
@@ -83,7 +83,7 @@ class MyApp extends StatelessWidget {
                         fontWeight:FontWeight.bold,
                       ),
                     )
-                  ],
+                  ),
                 ),
               ),
             ],
