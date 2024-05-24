@@ -21,8 +21,19 @@ class MyApp extends StatelessWidget {
                 'Dr Jessica Muirhead',
                 style:TextStyle(
                   color:Colors.white,
+                  fontFamily: 'Pacifico',
                   fontSize:40.0,
                   fontWeight:FontWeight.bold,
+                ),
+              ),
+              Text(
+                'Director of Academic Practice'.toUpperCase(),
+                style:TextStyle(
+                  color:Colors.teal[100],
+                  fontFamily:'Source Sans',
+                  fontSize:20.0,
+                  fontWeight:FontWeight.bold,
+                  letterSpacing:2.5,
                 ),
               ),
             ],
